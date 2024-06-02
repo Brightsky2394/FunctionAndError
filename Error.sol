@@ -16,7 +16,7 @@ contract AssertError {
 }
 
 contract RevertError {
-    function(uint256 _value) public pure {
+    function testRevert(uint256 _value) public pure {
         if (_value >= 10) {
             revert("Input must be less than 10");
         }
